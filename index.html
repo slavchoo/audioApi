@@ -1,0 +1,46 @@
+<!doctype html>
+<html ng-app="LanguageApp" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf8">
+
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div ng-controller="SelfTrainerCtrl" class="col-md-8 center-block">
+            <div class="progress">
+                <div class="progress-bar progress-bar-success" style="width: {{positive}}%">
+                </div>
+                <div class="progress-bar progress-bar-danger" style="width: {{negative}}%">
+                </div>
+            </div>
+
+            <audio-player ng-hide="questionData.variants || isDone"></audio-player>
+
+            <form class="form-horizontal" ng-show="questionData.variants && !isDone">
+                <div class="form-group">
+                    <div class="radio" ng-repeat="questoin in questionData.variants">
+                        <label>
+                            <input type="radio" value="{{ $index }}" ng-model="answer" ng-change="doAnswer($index)" ng-disabled="isWrong">{{ questoin }}
+                        </label>
+                    </div>
+                </div>
+                <a ng-href="#" ng-click="repeat()" class="btn btn-danger pull-left" ng-show="isWrong">Повторить</a>
+                <a ng-href="#" ng-click="nextItem()" class="btn btn-success pull-right" ng-show="showNext">Продолжить</a>
+            </form>
+
+            <div ng-show="isDone">
+                Тест Окончен
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/bower_components/angular/angular.js"></script>
+<script src="/scripts/directives/audioPlayer.js"></script>
+<script src="/scripts/app.js"></script>
+</body>
+</html>
