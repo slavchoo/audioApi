@@ -7,6 +7,4 @@
     <button ng-disabled="currentNum >= (totalNum-1)" class="btn btn-default next" ng-click="next()">next <i class="glyphicon glyphicon-step-forward"></i></button>
 </div>
 
-<div class="form-group time">
-    <label>time: <input min="0" max="{{audio.duration}}" step="0.01" type="range" ng-model="audio.currentTime" /></label>
-</div>
+<div id="wave"></div>

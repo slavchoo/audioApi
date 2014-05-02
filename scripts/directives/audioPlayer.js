@@ -7,6 +7,20 @@ angular.module('audioPlayer-directive', [])
                 $scope.audio = new Audio();
                 $scope.currentNum = 0;
 
+                var wavesurfer = Object.create(WaveSurfer);
+                wavesurfer.init({
+                    container: '#wave'
+                });
+                wavesurfer.on('ready', function () {
+                    wavesurfer.play();
+                });
+                wavesurfer.on('finish', function () {
+                    console.log('finish');
+                    $rootScope.$broadcast('audio.ended', $scope.currentNum);
+                    $scope.next();
+                });
+                wavesurfer.load('/audio/demo.wav');
+
                 // tell others to give me my prev/next track (with audio.set message)
                 $scope.next = function () {
                     $rootScope.$broadcast('audio.next');
