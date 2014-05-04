@@ -19,6 +19,7 @@
   "dependencies": {
     "angular": "~1.2.16",
     "bootstrap": "~3.1.1",
-    "wavesurfer.js": "~0.1.6"
+    "wavesurfer.js": "~0.1.6",
+    "jquery": "~2.1.1"
   }
 }
