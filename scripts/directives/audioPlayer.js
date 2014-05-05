@@ -101,8 +101,9 @@ angular.module('audioPlayer-directive', [])
                     $rootScope.$broadcast('audio.pause', this);
                 });
                 $scope.audio.addEventListener('timeupdate', function () {
+                    console.log($scope.audio.currentTime, $scope.audio.duration);
                     $rootScope.$broadcast('audio.time', this);
-                });
+                }, false);
                 $scope.audio.addEventListener('ended', function () {
                     $rootScope.$broadcast('audio.ended', $scope.currentNum);
                     $scope.next();
