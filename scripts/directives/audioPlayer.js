@@ -127,7 +127,6 @@ angular.module('audioPlayer-directive', [])
                     $scope.totalNum = totalNum;
 
                 });
-;
             },
 
             templateUrl: '/component.html'
