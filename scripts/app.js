@@ -9,13 +9,15 @@ LanguageApp.filter('startFrom', function () {
     };
 });
 
-//http://blog.jetboystudio.com/articles/angular-music-player/
 var SelfTrainerCtrl = LanguageApp.controller('SelfTrainerCtrl', function ($rootScope, $scope) {
     $scope.positive = 0;
     $scope.negative = 0;
+    $scope.positeCount = 0;
+    $scope.negativeCount = 0;
     $scope.isDone = false;
     $scope.isWrong = false;
     $scope.showNext = false;
+    $scope.step = 1;
 
     $scope.answer = null;
     $scope.questionData = {};
@@ -37,10 +39,15 @@ var SelfTrainerCtrl = LanguageApp.controller('SelfTrainerCtrl', function ($rootS
     ];
 
     var updateTrack = function () {
+        $scope.currentTrack = $scope.currentTrack < $scope.data.length ? $scope.currentTrack : $scope.data.length - 1;
         $rootScope.$broadcast('audio.set',
                 '/audio/' + $scope.data[$scope.currentTrack].file,
             $scope.data[$scope.currentTrack],
             $scope.currentTrack, $scope.data.length);
+    };
+
+    $scope.play = function() {
+        $rootScope.$broadcast('startPlay');
     };
 
     $rootScope.$on('audio.next', function () {
@@ -64,29 +71,40 @@ var SelfTrainerCtrl = LanguageApp.controller('SelfTrainerCtrl', function ($rootS
     $rootScope.$on('audio.ended', function(context, number) {
         $scope.$apply(function() {
             $scope.showNext = false;
+            $scope.isWrong = false;
+            $scope.isDisabled = false;
             $scope.questionData = $scope.data[number];
         });
     });
 
     $scope.doAnswer = function(index) {
+        $scope.isDisabled = true;
         $scope.showNext = true;
+
         if ($scope.questionData.answer == index) {
-            $scope.positive += (1/$scope.data.length) * 100;
+            $scope.positeCount++;
             $scope.isWrong = false;
         } else {
+            $scope.negativeCount++;
             $scope.isWrong = true;
-            $scope.negative += (1/$scope.data.length) * 100;
-            return;
         }
 
-        if(index < $scope.data.length -1) {
-        } else {
-            $scope.isDone = true;
-        }
+        var count = ($scope.positeCount + $scope.negativeCount < $scope.data.length)
+            ? $scope.data.length
+            : $scope.positeCount + $scope.negativeCount;
+        $scope.positive = ($scope.positeCount/(count)) * 100;
+        $scope.negative = ($scope.negativeCount/(count)) * 100;
     };
 
     $scope.nextItem = function() {
         $scope.questionData = {};
+        $scope.step++;
+
+        if($scope.step > $scope.data.length) {
+            $scope.isDone = true;
+            return;
+        }
+
         $rootScope.$broadcast('audio.next');
     }
 

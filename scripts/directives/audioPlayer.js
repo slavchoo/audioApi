@@ -5,12 +5,12 @@ var audioContext = new AudioContext();
 var currentBuffer = null;
 
 // CANVAS
-var canvasWidth = 512, canvasHeight = 120;
+var canvasWidth = 750, canvasHeight = 120;
 var newCanvas = createCanvas(canvasWidth, canvasHeight);
 var context = null;
 
 function appendCanvas() {
-    $('#wave').empty().append(newCanvas);
+    $('#wave .canvas').empty().append(newCanvas);
     context = newCanvas.getContext('2d');
 }
 
@@ -59,7 +59,6 @@ function displayBuffer(buff /* is an AudioBuffer */) {
         context.stroke();
     }
     context.restore();
-    console.log('done');
 };
 
 function createCanvas(w, h) {
@@ -88,12 +87,16 @@ angular.module('audioPlayer-directive', [])
 
                 // tell audio element to play/pause, you can also use $scope.audio.play() or $scope.audio.pause();
                 $scope.playpause = function () {
-                    var a = $scope.audio.paused ? $scope.audio.play() : $scope.audio.pause();
+                    if ($scope.audio.paused) $scope.audio.play();
                 };
+
+                $rootScope.$on('startPlay', $scope.playpause)
 
                 // listen for audio-element events, and broadcast stuff
                 $scope.audio.addEventListener('play', function () {
+                    $('#wave .progress-line').css({left: 0});
                     appendCanvas();
+                    $('#wave .progress-line').animate({left: 720}, $scope.audio.duration * 1000);
 
                     $rootScope.$broadcast('audio.play', this);
                 });
@@ -101,10 +104,10 @@ angular.module('audioPlayer-directive', [])
                     $rootScope.$broadcast('audio.pause', this);
                 });
                 $scope.audio.addEventListener('timeupdate', function () {
-                    console.log($scope.audio.currentTime, $scope.audio.duration);
                     $rootScope.$broadcast('audio.time', this);
                 }, false);
                 $scope.audio.addEventListener('ended', function () {
+                    $('#wave .progress-line').css({left: 0});
                     $rootScope.$broadcast('audio.ended', $scope.currentNum);
                     $scope.next();
                 });

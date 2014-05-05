@@ -1,10 +1,4 @@
-<div class="form-group">
-    <button ng-disabled="currentNum == 0" class="btn btn-default prev" ng-click="prev()"><i class="glyphicon glyphicon-step-backward"></i> prev</button>
-    <button class="btn btn-default playpause" ng-click="playpause()" ng-class="{paused:audio.paused}">
-        <span class="play-text"><i class="glyphicon glyphicon-play"></i> play</span>
-        <span class="pause-text"><i class="glyphicon glyphicon-pause"></i> pause</span>
-    </button>
-    <button ng-disabled="currentNum >= (totalNum-1)" class="btn btn-default next" ng-click="next()">next <i class="glyphicon glyphicon-step-forward"></i></button>
+<div id="wave">
+    <div class="progress-line"></div>
+    <div class="canvas"></div>
 </div>
-
-<div id="wave"></div>

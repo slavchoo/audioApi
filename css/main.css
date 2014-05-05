@@ -20,3 +20,16 @@ audio-player * {
     -ms-user-select: none;
     user-select: none;
 }
+
+#wave {
+    position: relative;
+}
+
+.progress-line {
+    position: absolute;
+    height: 120px;
+    width: 1px;
+    border-left: 1px solid red;
+    top: 0px;
+    left: 0px;
+}

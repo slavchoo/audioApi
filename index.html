@@ -41,12 +41,13 @@
             </div>
 
             <audio-player ng-hide="questionData.variants || isDone"></audio-player>
+            <a ng-href="#" ng-click="play()" class="btn btn-success pull-right" ng-hide="questionData.variants || isDone">Слушать</a>
 
             <form class="form-horizontal" ng-show="questionData.variants && !isDone">
                 <div class="form-group">
                     <div class="radio" ng-repeat="questoin in questionData.variants">
                         <label>
-                            <input type="radio" value="{{ $index }}" ng-model="answer" ng-change="doAnswer($index)" ng-disabled="isWrong">{{ questoin }}
+                            <input type="radio" value="{{ $index }}" ng-model="answer" ng-change="doAnswer($index)" ng-disabled="isWrong || isDisabled">{{ questoin }}
                         </label>
                     </div>
                 </div>
