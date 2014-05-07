@@ -1,0 +1,15 @@
+<h3>Видео ролик</h3>
+
+
+<div class="row">
+    <div class="col-md-6">
+        <video id="video-1" height="200"></video>
+        <a class="col-md-12 btn btn-info" ng-click="playDictor()" ng-href="">Смотреть и слушать диктора</a>
+    </div>
+    <div class="col-md-6">
+        <video id="video-2" height="200"></video>
+        <a class="col-md-4 btn btn-danger" ng-href="" ng-click="record()" ng-hide="recordInProgress">Записать себя</a>
+        <a class="col-md-4 btn btn-danger" ng-href="" ng-click="stopRecord()" ng-show="recordInProgress">Стоп</a>
+        <a class="col-md-8 btn btn-info" ng-href="">Смотреть и слушать себя</a>
+    </div>
+</div>

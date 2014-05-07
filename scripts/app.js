@@ -19,6 +19,11 @@ window.LanguageApp = angular.module('LanguageApp', [
             controller: 'SpeechCorrectionCtrl',
             controllerAs: 'ctrl'
         })
+        .when('/video_test', {
+            templateUrl: '../views/video_test.html',
+            controller: 'VideoTestCtrl',
+            controllerAs: 'ctrl'
+        })
         .otherwise({
             redirectTo: '/'
         });
