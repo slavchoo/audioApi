@@ -4,4 +4,9 @@ var app = express();
 
 app.use(express.logger('dev'));
 app.use(gzippo.staticGzip("" + __dirname + "/"));
+
+app.get('/*', function(req, res) {
+  res.sendfile('./index.html');
+});
+
 app.listen(process.env.PORT || 5000);
