@@ -21,8 +21,11 @@ audio-player * {
     user-select: none;
 }
 
-#wave {
+#wave, #wave-1, #wave-2 {
     position: relative;
+    min-height: 120px;
+    background: #000;
+    margin: 10px 0;
 }
 
 .progress-line {

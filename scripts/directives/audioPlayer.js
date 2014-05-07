@@ -96,7 +96,7 @@ angular.module('audioPlayer-directive', [])
                 $scope.audio.addEventListener('play', function () {
                     $('#wave .progress-line').css({left: 0});
                     appendCanvas();
-                    $('#wave .progress-line').animate({left: 720}, $scope.audio.duration * 1000);
+                    $('#wave .progress-line').animate({left: canvasWidth}, $scope.audio.duration * 1000);
 
                     $rootScope.$broadcast('audio.play', this);
                 });
