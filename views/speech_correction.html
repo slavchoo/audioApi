@@ -3,9 +3,7 @@
 
 <div class="row">
     <form class="col-md-12">
-        <select class="form-control">
-            <option value="">Выберите трек</option>
-        </select>
+        <select class="form-control" ng-model="currentTrack" ng-options="item.title for item in data" required></select>
     </form>
 </div>
 
@@ -17,11 +15,11 @@
 
 <div class="row">
     <div class="col-md-12">
-        <a ng-href="" class="btn btn-info">Предыдущий трек</a>
+        <a ng-href="" class="btn btn-info" ng-click="prev()">Предыдущий трек</a>
         <a ng-href="" class="btn btn-default" ng-click="playOriginal()">Слушать диктора</a>
         <a ng-href="" class="btn btn-warning" ng-click="connectAudioInToSpeakers()" ng-hide="recordInProgress">Записать себя</a>
         <a ng-href="" class="btn btn-warning" ng-click="makeItStop()" ng-show="recordInProgress">Остановить Запись</a>
         <a ng-href="" class="btn btn-danger" ng-click="playMe()">Слушать себя</a>
-        <a ng-href="" class="btn btn-info">Следущий трек</a>
+        <a ng-href="" class="btn btn-info" ng-click="next()">Следущий трек</a>
     </div>
 </div>
