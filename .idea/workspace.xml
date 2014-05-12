@@ -2,11 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd3a089c-70cc-4192-b461-aed7ff36a894" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/video/mov_bbb.mp4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/controllers/VideoTest.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/video_test.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/app.js" afterPath="$PROJECT_DIR$/scripts/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/whammy/screenshot.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/whammy/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/whammy/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/whammy/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/whammy/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/whammy/clock.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/whammy/testing/lib.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/whammy/testing/pinball.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/whammy/testing/schema.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/whammy/whammy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/whammy/testing/whammy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/controllers/VideoTest.js" afterPath="$PROJECT_DIR$/scripts/controllers/VideoTest.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/video_test.html" afterPath="$PROJECT_DIR$/views/video_test.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="langs.iws" />
@@ -30,37 +40,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="speech_correction.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/speech_correction.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="15" selection-start="324" selection-end="324" vertical-scroll-proportion="-7.5833335" vertical-offset="28" max-vertical-offset="540">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SpeechCorrection.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/controllers/SpeechCorrection.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="12" selection-start="3349" selection-end="3402" vertical-scroll-proportion="0.0" vertical-offset="1125" max-vertical-offset="2565">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="video_test.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/video_test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="69" selection-start="502" selection-end="502" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="315">
+            <state line="14" column="6" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="315">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VideoTest.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="VideoTest.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/controllers/VideoTest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="34" selection-start="1876" selection-end="1876" vertical-scroll-proportion="0.47368422" vertical-offset="591" max-vertical-offset="1200">
+            <state line="151" column="17" selection-start="5252" selection-end="5252" vertical-scroll-proportion="0.0" vertical-offset="2001" max-vertical-offset="2400">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpeechCorrection.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/controllers/SpeechCorrection.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="121" column="6" selection-start="4446" selection-end="4446" vertical-scroll-proportion="0.96741855" vertical-offset="1429" max-vertical-offset="2565">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="42" selection-start="1788" selection-end="1788" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="840">
               <folding />
             </state>
           </provider>
@@ -82,7 +92,6 @@
         <option value="$PROJECT_DIR$/bower_components/scripts/app.js" />
         <option value="$PROJECT_DIR$/bower_components/wavesurfer.js/src/wavesurfer.js" />
         <option value="$PROJECT_DIR$/shared.js" />
-        <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/test2.html" />
         <option value="$PROJECT_DIR$/component.html" />
         <option value="$PROJECT_DIR$/scripts/controllers/selfTrainer.js" />
@@ -93,19 +102,21 @@
         <option value="$PROJECT_DIR$/views/speech_correction.html" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/scripts/directives/audioPlayer.js" />
-        <option value="$PROJECT_DIR$/scripts/controllers/SpeechCorrection.js" />
         <option value="$PROJECT_DIR$/scripts/app.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/bower_components/whammy/whammy.js" />
+        <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/views/video_test.html" />
         <option value="$PROJECT_DIR$/scripts/controllers/VideoTest.js" />
+        <option value="$PROJECT_DIR$/scripts/controllers/SpeechCorrection.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
-    <option name="y" value="24" />
-    <option name="width" value="1301" />
-    <option name="height" value="744" />
+    <option name="x" value="64" />
+    <option name="y" value="-2" />
+    <option name="width" value="1303" />
+    <option name="height" value="771" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -133,7 +144,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -166,26 +176,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="langs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="audioApi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -209,6 +202,14 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -219,12 +220,8 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -232,10 +229,6 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="CHROME" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
@@ -281,11 +274,15 @@
       <created>1399501503649</created>
       <updated>1399501503649</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="start with video">
+      <created>1399503838494</created>
+      <updated>1399503838494</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
+    <frame x="64" y="-2" width="1303" height="771" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -302,11 +299,11 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -326,7 +323,8 @@
     <MESSAGE value="canvas width" />
     <MESSAGE value="html" />
     <MESSAGE value="audio capturing" />
-    <option name="LAST_COMMIT_MESSAGE" value="audio capturing" />
+    <MESSAGE value="start with video" />
+    <option name="LAST_COMMIT_MESSAGE" value="start with video" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -334,11 +332,30 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/speech_correction.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="59" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="465">
+        <state line="42" column="42" selection-start="1788" selection-end="1788" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="840">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/video_test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="69" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/controllers/VideoTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="34" selection-start="1876" selection-end="1876" vertical-scroll-proportion="0.0" vertical-offset="591" max-vertical-offset="1200">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/speech_correction.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="59" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="465" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/controllers/SpeechCorrection.js">
@@ -350,23 +367,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="56" selection-start="1524" selection-end="1524" vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="795">
-          <folding />
-        </state>
+        <state line="38" column="56" selection-start="1524" selection-end="1524" vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="795" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/controllers/selfTrainer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="10" selection-start="424" selection-end="788" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1725">
-          <folding />
-        </state>
+        <state line="20" column="10" selection-start="424" selection-end="788" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1725" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/speech_correction.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="6" selection-start="898" selection-end="898" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="561">
-          <folding />
-        </state>
+        <state line="26" column="6" selection-start="898" selection-end="898" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="561" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/controllers/SpeechCorrection.js">
@@ -378,16 +389,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/controllers/selfTrainer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1955">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1955" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/component.html">
@@ -397,9 +404,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/final.html">
@@ -409,9 +414,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/controllers/FinalTestCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1955">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1955" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/selfTrainer.html">
@@ -426,16 +429,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/directives/audioPlayer.js">
@@ -445,16 +444,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/directives/audioPlayer.js">
@@ -479,9 +474,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/component.html">
@@ -491,9 +484,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bower_components/wavesurfer.js/example/main.js">
@@ -528,9 +519,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/controllers/FinalTestCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/final.html">
@@ -550,77 +539,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="91" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="91" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/speech_correction.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="15" selection-start="324" selection-end="324" vertical-scroll-proportion="-7.5833335" vertical-offset="28" max-vertical-offset="540">
-          <folding />
-        </state>
+        <state line="14" column="15" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0" vertical-offset="28" max-vertical-offset="540" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="18" selection-start="590" selection-end="590" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
-          <folding />
-        </state>
+        <state line="27" column="18" selection-start="590" selection-end="590" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bower_components/Recorderjs/recorder.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="8" selection-start="547" selection-end="547" vertical-scroll-proportion="0.55889726" vertical-offset="2" max-vertical-offset="1425">
-          <folding />
-        </state>
+        <state line="15" column="8" selection-start="547" selection-end="547" vertical-scroll-proportion="0.55889726" vertical-offset="2" max-vertical-offset="1425" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/controllers/selfTrainer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="42" selection-start="987" selection-end="987" vertical-scroll-proportion="0.2631579" vertical-offset="360" max-vertical-offset="1725">
-          <folding />
-        </state>
+        <state line="31" column="42" selection-start="987" selection-end="987" vertical-scroll-proportion="0.2631579" vertical-offset="360" max-vertical-offset="1725" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/directives/audioPlayer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="9" selection-start="382" selection-end="382" vertical-scroll-proportion="-4.392857" vertical-offset="42" max-vertical-offset="2145">
-          <folding />
-        </state>
+        <state line="11" column="9" selection-start="382" selection-end="382" vertical-scroll-proportion="-4.392857" vertical-offset="42" max-vertical-offset="2145" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="26" selection-start="681" selection-end="691" vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="630">
-          <folding />
-        </state>
+        <state line="21" column="26" selection-start="681" selection-end="691" vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="630" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/whammy/whammy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="468" column="74" selection-start="13012" selection-end="13012" vertical-scroll-proportion="0.0" vertical-offset="6679" max-vertical-offset="7110" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="11" selection-start="256" selection-end="256" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="825">
+        <state line="42" column="42" selection-start="1788" selection-end="1788" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="840">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/video_test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="69" selection-start="502" selection-end="502" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="315">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/controllers/SpeechCorrection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="12" selection-start="3349" selection-end="3402" vertical-scroll-proportion="0.0" vertical-offset="1125" max-vertical-offset="2565">
+        <state line="14" column="6" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="315">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/controllers/VideoTest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="34" selection-start="1876" selection-end="1876" vertical-scroll-proportion="0.47368422" vertical-offset="591" max-vertical-offset="1200">
+        <state line="151" column="17" selection-start="5252" selection-end="5252" vertical-scroll-proportion="0.0" vertical-offset="2001" max-vertical-offset="2400">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/controllers/SpeechCorrection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="121" column="6" selection-start="4446" selection-end="4446" vertical-scroll-proportion="0.96741855" vertical-offset="1429" max-vertical-offset="2565">
           <folding />
         </state>
       </provider>
