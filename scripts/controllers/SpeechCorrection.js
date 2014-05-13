@@ -107,7 +107,9 @@ LanguageApp.controller('SpeechCorrectionCtrl', function ($rootScope, $scope) {
         $scope.recordInProgress = false;
     };
 
+    var etalonBuffers = null;
     var createBuffer = function(buffers) {
+        etalonBuffers = buffers;
         var newSource = audioContext.createBufferSource();
         var newBuffer = audioContext.createBuffer( 2, buffers[0].length, audioContext.sampleRate );
         newBuffer.getChannelData(0).set(buffers[0]);
@@ -122,6 +124,16 @@ LanguageApp.controller('SpeechCorrectionCtrl', function ($rootScope, $scope) {
     };
 
     $scope.playMe = function() {
+        var buffers = etalonBuffers;
+        var newSource = audioContext.createBufferSource();
+        var newBuffer = audioContext.createBuffer( 2, buffers[0].length, audioContext.sampleRate );
+        newBuffer.getChannelData(0).set(buffers[0]);
+        newBuffer.getChannelData(1).set(buffers[1]);
+        newSource.buffer = newBuffer;
+
+        newSource.connect( audioContext.destination );
+        userAudioSource = newSource;
+
         if (userAudioSource) {
             userAudioSource.start(0);
             $('#wave-2 .progress-line').css({left: 0});
