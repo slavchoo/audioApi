@@ -68,8 +68,9 @@ LanguageApp.controller('VideoTestCtrl', function ($rootScope, $scope) {
         };
 
         function record() {
+            $scope.recordIsDone = false;
+            $scope.plaing = false;
             $scope.recordInProgress = true;
-            var elapsedTime = $('#elasped-time');
             var ctx = canvas.getContext('2d');
             var CANVAS_HEIGHT = canvas.height;
             var CANVAS_WIDTH = canvas.width;
@@ -105,31 +106,11 @@ LanguageApp.controller('VideoTestCtrl', function ($rootScope, $scope) {
             if(!$scope.recordIsDone) {
                 return;
             }
+            $scope.plaing = true;
             var url = opt_url || null;
-            var video = $('#video-2') || null;
+            var video = $('#video-3') || null;
 
-            if (!video) {
-                video = document.createElement('video');
-                video.autoplay = true;
-                video.controls = true;
-                video.loop = true;
-                //video.style.position = 'absolute';
-                //video.style.top = '70px';
-                //video.style.left = '10px';
-                video.style.width = canvas.width + 'px';
-                video.style.height = canvas.height + 'px';
-                $('#video-preview').appendChild(video);
-
-            } else {
-                window.URL.revokeObjectURL(video.src);
-            }
-
-            // https://github.com/antimatter15/whammy
-            // var encoder = new Whammy.Video(1000/60);
-            // frames.forEach(function(dataURL, i) {
-            //   encoder.add(dataURL);
-            // });
-            // var webmBlob = encoder.compile();
+            window.URL.revokeObjectURL(video.src);
 
             if (!url) {
                 var webmBlob = Whammy.fromImageArray(frames, 1000 / 60);
