@@ -105,6 +105,6 @@ var SelfTrainerCtrl = LanguageApp.controller('SelfTrainerCtrl', function ($rootS
 
     setTimeout(function () {
         updateTrack();
-    }, 100)
+    }, 200)
 
 });
