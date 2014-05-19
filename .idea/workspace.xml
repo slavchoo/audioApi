@@ -26,19 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="video_test.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/video_test.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="6" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="315">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="VideoTest.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/controllers/VideoTest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="151" column="17" selection-start="5252" selection-end="5252" vertical-scroll-proportion="0.0" vertical-offset="2001" max-vertical-offset="2400">
+            <state line="28" column="37" selection-start="911" selection-end="1072" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="2115">
               <folding />
             </state>
           </provider>
@@ -47,16 +38,7 @@
       <file leaf-file-name="SpeechCorrection.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/controllers/SpeechCorrection.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="36" selection-start="5083" selection-end="5083" vertical-scroll-proportion="0.8120301" vertical-offset="1746" max-vertical-offset="2745">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="42" selection-start="1788" selection-end="1788" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="840">
+            <state line="103" column="21" selection-start="3855" selection-end="3855" vertical-scroll-proportion="0.716792" vertical-offset="1259" max-vertical-offset="2805">
               <folding />
             </state>
           </provider>
@@ -92,8 +74,8 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/bower_components/whammy/whammy.js" />
         <option value="$PROJECT_DIR$/test.html" />
-        <option value="$PROJECT_DIR$/views/video_test.html" />
         <option value="$PROJECT_DIR$/scripts/controllers/VideoTest.js" />
+        <option value="$PROJECT_DIR$/views/video_test.html" />
         <option value="$PROJECT_DIR$/scripts/controllers/SpeechCorrection.js" />
       </list>
     </option>
@@ -130,7 +112,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -163,8 +144,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="langs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="audioApi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -268,7 +268,11 @@
       <created>1399879295443</created>
       <updated>1399879295443</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="repeatly video recording">
+      <created>1400171161068</created>
+      <updated>1400171161068</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -288,12 +292,12 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -315,7 +319,8 @@
     <MESSAGE value="audio capturing" />
     <MESSAGE value="start with video" />
     <MESSAGE value="video test" />
-    <option name="LAST_COMMIT_MESSAGE" value="video test" />
+    <MESSAGE value="repeatly video recording" />
+    <option name="LAST_COMMIT_MESSAGE" value="repeatly video recording" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -577,21 +582,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/video_test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="6" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="315">
+        <state line="9" column="65" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="330">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/controllers/VideoTest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="17" selection-start="5252" selection-end="5252" vertical-scroll-proportion="0.0" vertical-offset="2001" max-vertical-offset="2400">
+        <state line="28" column="37" selection-start="911" selection-end="1072" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="2115">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/controllers/SpeechCorrection.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="36" selection-start="5083" selection-end="5083" vertical-scroll-proportion="0.8120301" vertical-offset="1746" max-vertical-offset="2745">
+        <state line="103" column="21" selection-start="3855" selection-end="3855" vertical-scroll-proportion="0.716792" vertical-offset="1259" max-vertical-offset="2805">
           <folding />
         </state>
       </provider>

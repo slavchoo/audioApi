@@ -82,11 +82,15 @@ LanguageApp.controller('SpeechCorrectionCtrl', function ($rootScope, $scope) {
     // this is to store a reference to the input so we can kill it later
     var liveSource;
 
+    navigator.getUserMedia = navigator.getUserMedia ||
+        navigator.webkitGetUserMedia || navigator.mozGetUserMedia ||
+        navigator.msGetUserMedia;
+
     var recorder = null;
     // creates an audiocontext and hooks up the audio input
     $scope.connectAudioInToSpeakers = function () {
         var context = new AudioContext();
-        navigator.webkitGetUserMedia({audio: true}, function (stream) {
+        navigator.getUserMedia({audio: true}, function (stream) {
             console.log('start recordig');
             liveSource = context.createMediaStreamSource(stream);
             recorder = new Recorder(liveSource, {workerPath: '/bower_components/Recorderjs/recorderWorker.js'})
@@ -97,7 +101,7 @@ LanguageApp.controller('SpeechCorrectionCtrl', function ($rootScope, $scope) {
                 $scope.recordInProgress = true;
             });
 
-        });
+        }, function(e) {});
     };
 
     // disconnects the audio input
