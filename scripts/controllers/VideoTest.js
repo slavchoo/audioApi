@@ -12,6 +12,8 @@ LanguageApp.controller('VideoTestCtrl', function ($rootScope, $scope) {
 
     var UserVideo = document.getElementById("video-2");
 
+    var streamG = null;
+
     (function(exports) {
 
         exports.URL = exports.URL || exports.webkitURL;
@@ -58,6 +60,7 @@ LanguageApp.controller('VideoTestCtrl', function ($rootScope, $scope) {
 
             navigator.getUserMedia({video: true, audio: true}, function(stream) {
                 video.src = window.URL.createObjectURL(stream);
+                streamG = stream;
                 finishVideoSetup_();
             }, function(e) {
                 alert('Fine, you get a movie instead of your beautiful face ;)');
@@ -67,7 +70,7 @@ LanguageApp.controller('VideoTestCtrl', function ($rootScope, $scope) {
             });
         };
 
-        function record() {
+        function record(stream) {
             $scope.recordIsDone = false;
             $scope.plaing = false;
             $scope.recordInProgress = true;
@@ -92,6 +95,7 @@ LanguageApp.controller('VideoTestCtrl', function ($rootScope, $scope) {
             };
 
             rafId = requestAnimationFrame(drawVideoFrame_);
+            $scope.connectAudioInToSpeakers(streamG);
         };
 
         function stop() {
@@ -100,6 +104,7 @@ LanguageApp.controller('VideoTestCtrl', function ($rootScope, $scope) {
             cancelAnimationFrame(rafId);
             endTime = Date.now();
             document.title = ORIGINAL_DOC_TITLE;
+            $scope.makeItStop();
         };
 
         function embedVideoPreview(opt_url) {
@@ -118,6 +123,7 @@ LanguageApp.controller('VideoTestCtrl', function ($rootScope, $scope) {
             }
 
             video.src = url;
+            $scope.playMe();
         }
 
         function initEvents() {
@@ -131,6 +137,57 @@ LanguageApp.controller('VideoTestCtrl', function ($rootScope, $scope) {
         initEvents();
 
         exports.$ = $;
+
+
+        // creates an audiocontext and hooks up the audio input
+        $scope.connectAudioInToSpeakers = function (stream) {
+            var context = new AudioContext();
+//            navigator.getUserMedia({audio: true}, function (stream) {
+                console.log('start recordig');
+                liveSource = context.createMediaStreamSource(stream);
+                recorder = new Recorder(liveSource, {workerPath: '/bower_components/Recorderjs/recorderWorker.js'})
+                recorder.clear();
+                recorder.record();
+
+//            }, function(e) {});
+        };
+
+        // disconnects the audio input
+        $scope.makeItStop = function () {
+            recorder.stop();
+            recorder.getBuffer(createBuffer);
+            $scope.recordInProgress = false;
+        };
+
+        var etalonBuffers = null;
+        var createBuffer = function(buffers) {
+            etalonBuffers = buffers;
+            var newSource = audioContext.createBufferSource();
+            var newBuffer = audioContext.createBuffer( 2, buffers[0].length, audioContext.sampleRate );
+            newBuffer.getChannelData(0).set(buffers[0]);
+            newBuffer.getChannelData(1).set(buffers[1]);
+            newSource.buffer = newBuffer;
+
+            newSource.connect( audioContext.destination );
+            userAudioSource = newSource;
+
+        };
+
+        $scope.playMe = function() {
+            var buffers = etalonBuffers;
+            var newSource = audioContext.createBufferSource();
+            var newBuffer = audioContext.createBuffer( 2, buffers[0].length, audioContext.sampleRate );
+            newBuffer.getChannelData(0).set(buffers[0]);
+            newBuffer.getChannelData(1).set(buffers[1]);
+            newSource.buffer = newBuffer;
+
+            newSource.connect( audioContext.destination );
+            userAudioSource = newSource;
+
+            if (userAudioSource) {
+                userAudioSource.start(0);
+            }
+        };
 
     })(window);
 });
